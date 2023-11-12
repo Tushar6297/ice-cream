@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------header-------------------- */
+.header {
+    background-image: url(/assets/images/ice1.jpg);
+    background-size: cover;
+    padding: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.header h1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color:whitesmoke;
+   text-shadow:2px 2px 8px rgb(168, 18, 191);
+
+}
+
+.header h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 25px;
+    text-shadow:2px 2px 5px rgb(184, 41, 180);
+
+
+}
+
+/* ---------------------------navbar-------------------- */
+
+.navbar {
+    display: flex;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 20px 10px;
+    color: #f1f1f1;
+}
+.navbar a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+
+
+
+
+/* ----------------main------------------- */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.main .column-1 {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+
+}
+
+.main .column-2 {
+    flex: 70%;
+    /* background-color: white; */
+    padding: 20px;
+}
+
+/* ----------------footer-------------- */
+.Contact {
+    background-color: cadetblue;
+    padding: 15px;
+
+}
+
+@media(max-width:700px) {
+
+    .navbar,
+    .main {
+        flex-direction: column;
+    }
+}
